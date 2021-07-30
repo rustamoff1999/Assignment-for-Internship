@@ -20,6 +20,58 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.098039215690000001" green="0.26274509800000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="LWb-p8-WbP" customClass="TableViewCell" customModule="my_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LWb-p8-WbP" id="frl-60-CFY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-2a-lIF">
+                                                    <rect key="frame" x="384" y="39.5" width="21" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="4YA-y4-EFs"/>
+                                                        <constraint firstAttribute="width" constant="21" id="maY-6f-YII"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2G-oR-fle">
+                                                    <rect key="frame" x="30" y="13" width="344" height="59"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWK-FA-iEE">
+                                                    <rect key="frame" x="30" y="74" width="344" height="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eWK-FA-iEE" firstAttribute="top" secondItem="u2G-oR-fle" secondAttribute="bottom" constant="2" id="Jp4-vW-TZJ"/>
+                                                <constraint firstItem="eWK-FA-iEE" firstAttribute="leading" secondItem="frl-60-CFY" secondAttribute="leadingMargin" constant="10" id="LQa-Eg-L13"/>
+                                                <constraint firstItem="eWK-FA-iEE" firstAttribute="bottom" secondItem="frl-60-CFY" secondAttribute="bottomMargin" constant="2" id="QPc-cH-tPm"/>
+                                                <constraint firstItem="u2G-oR-fle" firstAttribute="leading" secondItem="frl-60-CFY" secondAttribute="leadingMargin" constant="10" id="Qrz-k5-9n4"/>
+                                                <constraint firstItem="Gps-2a-lIF" firstAttribute="leading" secondItem="eWK-FA-iEE" secondAttribute="trailing" constant="10" id="Vs2-ys-tMT"/>
+                                                <constraint firstItem="Gps-2a-lIF" firstAttribute="leading" secondItem="u2G-oR-fle" secondAttribute="trailing" constant="10" id="cPN-aS-rlh"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gps-2a-lIF" secondAttribute="trailing" constant="9" id="d3V-Hh-XoF"/>
+                                                <constraint firstItem="Gps-2a-lIF" firstAttribute="centerY" secondItem="frl-60-CFY" secondAttribute="centerY" id="dem-hc-YVk"/>
+                                                <constraint firstItem="eWK-FA-iEE" firstAttribute="top" secondItem="u2G-oR-fle" secondAttribute="bottom" constant="2" id="ekG-PD-OxG"/>
+                                                <constraint firstItem="u2G-oR-fle" firstAttribute="top" secondItem="frl-60-CFY" secondAttribute="topMargin" constant="2" id="lzM-Qh-Ygi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentOfLabel" destination="eWK-FA-iEE" id="66h-DI-Lq8"/>
+                                            <outlet property="myImage" destination="Gps-2a-lIF" id="rA5-TK-l3n"/>
+                                            <outlet property="titleOfLabel" destination="u2G-oR-fle" id="xbu-oT-z4l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eS0-pn-QaR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XTJ-ey-T6d"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

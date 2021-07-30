@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE8877AF26B2B50F0050B942 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8877AE26B2B50F0050B942 /* Data.swift */; };
 		CE8877B126B2C62C0050B942 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8877B026B2C62C0050B942 /* DetailViewController.swift */; };
+		CEC306EC26B3D0FC00B3ABEC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC306EB26B3D0FC00B3ABEC /* TableViewCell.swift */; };
 		CECB764B26B075D900BF9C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB764A26B075D900BF9C29 /* AppDelegate.swift */; };
 		CECB764D26B075D900BF9C29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB764C26B075D900BF9C29 /* SceneDelegate.swift */; };
 		CECB764F26B075D900BF9C29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB764E26B075D900BF9C29 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		CE8877AE26B2B50F0050B942 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		CE8877B026B2C62C0050B942 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CEC306EB26B3D0FC00B3ABEC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CECB764726B075D900BF9C29 /* my-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECB764A26B075D900BF9C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECB764C26B075D900BF9C29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				CE8877AE26B2B50F0050B942 /* Data.swift */,
 				CECB764E26B075D900BF9C29 /* ViewController.swift */,
 				CE8877B026B2C62C0050B942 /* DetailViewController.swift */,
+				CEC306EB26B3D0FC00B3ABEC /* TableViewCell.swift */,
 				CECB765026B075D900BF9C29 /* Main.storyboard */,
 				CECB765326B075DD00BF9C29 /* Assets.xcassets */,
 				CECB765526B075DD00BF9C29 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				CECB764F26B075D900BF9C29 /* ViewController.swift in Sources */,
 				CE8877AF26B2B50F0050B942 /* Data.swift in Sources */,
 				CE8877B126B2C62C0050B942 /* DetailViewController.swift in Sources */,
+				CEC306EC26B3D0FC00B3ABEC /* TableViewCell.swift in Sources */,
 				CECB764B26B075D900BF9C29 /* AppDelegate.swift in Sources */,
 				CECB764D26B075D900BF9C29 /* SceneDelegate.swift in Sources */,
 			);

@@ -48,13 +48,14 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     }
     //cell itself
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
-        cell.textLabel?.text = data[indexPath.row].title.capitalized
-        cell.detailTextLabel?.text = data[indexPath.row].content
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as! TableViewCell
+
+        cell.myImage.image = #imageLiteral(resourceName: "Uncheck")
+        cell.titleOfLabel.text = data[indexPath.row].title.capitalized
+        cell.contentOfLabel.text = data[indexPath.row].content
         cell.backgroundColor = UIColor.white
-        cell.textLabel?.textColor = UIColor.black
-        cell.detailTextLabel?.textColor = UIColor.gray
-        cell.textLabel?.font = UIFont(name: "Impact", size: 20.0)
+        cell.titleOfLabel.textColor = UIColor.black
+        cell.contentOfLabel.textColor = UIColor.gray
         return cell
     }
     
@@ -62,6 +63,8 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         return 100.0
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath as IndexPath) as! TableViewCell
+        cell.myImage.image = #imageLiteral(resourceName: "Check")
         performSegue(withIdentifier: "showDetail", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
